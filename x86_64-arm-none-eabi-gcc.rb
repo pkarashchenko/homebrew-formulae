@@ -1,12 +1,12 @@
 require 'formula'
 
-class Aarch64NoneElfGcc < Formula
+class X8664ArmNoneEabiGcc < Formula
 
   homepage 'https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads'
   version '12.2.Rel1'
 
-  url 'https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-darwin-arm64-aarch64-none-elf.tar.xz'
-  sha256 '2434d966d8f170e9a8f6bd412e003b955caf30d9125ba3f51b80039193b029a4'
+  url 'https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-darwin-x86_64-arm-none-eabi.tar.xz'
+  sha256 '00c0eeb57ae92332f216151ac66df6ba17d2d3b306dac86f4006006f437b2902'
 
   def install
     (prefix/"gcc").install Dir["./*"]
